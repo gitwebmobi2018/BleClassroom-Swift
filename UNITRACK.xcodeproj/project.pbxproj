@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01658B35200882B700129F8D /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01658B34200882B700129F8D /* LectureViewController.swift */; };
+		01658B382008832E00129F8D /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01658B372008832E00129F8D /* RootNavigationController.swift */; };
+		01658B4520088BBA00129F8D /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B3A20088BBA00129F8D /* buttonbg.png */; };
+		01658B4620088BBA00129F8D /* unitracker title.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B3B20088BBA00129F8D /* unitracker title.png */; };
+		01658B4720088BBA00129F8D /* topbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B3C20088BBA00129F8D /* topbg.png */; };
+		01658B4820088BBA00129F8D /* bottombg.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B3D20088BBA00129F8D /* bottombg.png */; };
+		01658B4920088BBA00129F8D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B3E20088BBA00129F8D /* logo.png */; };
+		01658B4A20088BBA00129F8D /* round.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B3F20088BBA00129F8D /* round.png */; };
+		01658B4B20088BBA00129F8D /* undertitle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B4020088BBA00129F8D /* undertitle2.png */; };
+		01658B4C20088BBA00129F8D /* UNITRACKER.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B4120088BBA00129F8D /* UNITRACKER.png */; };
+		01658B4D20088BBA00129F8D /* orange_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B4220088BBA00129F8D /* orange_button.png */; };
+		01658B4E20088BBA00129F8D /* undertitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B4320088BBA00129F8D /* undertitle.png */; };
+		01658B4F20088BBA00129F8D /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B4420088BBA00129F8D /* logo2.png */; };
+		01658B512008922D00129F8D /* textfiled.png in Resources */ = {isa = PBXBuildFile; fileRef = 01658B502008922C00129F8D /* textfiled.png */; };
+		017B3357201671FC00AB104F /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B3356201671FC00AB104F /* PresentViewController.swift */; };
+		0183AAD02009795D00F84EBB /* OpenedLecturerClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0183AACF2009795D00F84EBB /* OpenedLecturerClassViewController.swift */; };
+		0183AAD220099DC700F84EBB /* WelcomeStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0183AAD120099DC700F84EBB /* WelcomeStudentViewController.swift */; };
+		0183AAD42009A8DE00F84EBB /* SearchLecturerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0183AAD32009A8DE00F84EBB /* SearchLecturerViewController.swift */; };
+		01A504CD200D0DBA003CF260 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A504CC200D0DBA003CF260 /* Constants.swift */; };
+		01A504CF200D7F94003CF260 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A504CE200D7F94003CF260 /* CoreBluetooth.framework */; };
+		01B13013200FD907008B435C /* connected_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B13012200FD906008B435C /* connected_image.png */; };
+		01B13015200FE2D3008B435C /* WelcomeLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B13014200FE2D3008B435C /* WelcomeLectureViewController.swift */; };
+		8E841FFE20083EAC003E2602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E841FFD20083EAC003E2602 /* AppDelegate.swift */; };
+		8E84200320083EAC003E2602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E84200120083EAC003E2602 /* Main.storyboard */; };
+		8E84200520083EAC003E2602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E84200420083EAC003E2602 /* Assets.xcassets */; };
+		8E84200820083EAC003E2602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E84200620083EAC003E2602 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01658B34200882B700129F8D /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
+		01658B372008832E00129F8D /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		01658B3A20088BBA00129F8D /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
+		01658B3B20088BBA00129F8D /* unitracker title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unitracker title.png"; sourceTree = "<group>"; };
+		01658B3C20088BBA00129F8D /* topbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbg.png; sourceTree = "<group>"; };
+		01658B3D20088BBA00129F8D /* bottombg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottombg.png; sourceTree = "<group>"; };
+		01658B3E20088BBA00129F8D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		01658B3F20088BBA00129F8D /* round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round.png; sourceTree = "<group>"; };
+		01658B4020088BBA00129F8D /* undertitle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undertitle2.png; sourceTree = "<group>"; };
+		01658B4120088BBA00129F8D /* UNITRACKER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UNITRACKER.png; sourceTree = "<group>"; };
+		01658B4220088BBA00129F8D /* orange_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_button.png; sourceTree = "<group>"; };
+		01658B4320088BBA00129F8D /* undertitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undertitle.png; sourceTree = "<group>"; };
+		01658B4420088BBA00129F8D /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		01658B502008922C00129F8D /* textfiled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfiled.png; sourceTree = "<group>"; };
+		017B3356201671FC00AB104F /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		0183AACF2009795D00F84EBB /* OpenedLecturerClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenedLecturerClassViewController.swift; sourceTree = "<group>"; };
+		0183AAD120099DC700F84EBB /* WelcomeStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStudentViewController.swift; sourceTree = "<group>"; };
+		0183AAD32009A8DE00F84EBB /* SearchLecturerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLecturerViewController.swift; sourceTree = "<group>"; };
+		01A504C5200CF854003CF260 /* UNITRACK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UNITRACK.entitlements; sourceTree = "<group>"; };
+		01A504CC200D0DBA003CF260 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		01A504CE200D7F94003CF260 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		01B13012200FD906008B435C /* connected_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected_image.png; sourceTree = "<group>"; };
+		01B13014200FE2D3008B435C /* WelcomeLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLectureViewController.swift; sourceTree = "<group>"; };
+		8E841FFA20083EAB003E2602 /* UNITRACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UNITRACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E841FFD20083EAC003E2602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E84200220083EAC003E2602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E84200420083EAC003E2602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E84200720083EAC003E2602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E84200920083EAC003E2602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E841FF720083EAB003E2602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A504CF200D7F94003CF260 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01658B312008818100129F8D /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				01658B372008832E00129F8D /* RootNavigationController.swift */,
+				01658B34200882B700129F8D /* LectureViewController.swift */,
+				01B13014200FE2D3008B435C /* WelcomeLectureViewController.swift */,
+				0183AACF2009795D00F84EBB /* OpenedLecturerClassViewController.swift */,
+				0183AAD120099DC700F84EBB /* WelcomeStudentViewController.swift */,
+				0183AAD32009A8DE00F84EBB /* SearchLecturerViewController.swift */,
+				017B3356201671FC00AB104F /* PresentViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		01658B392008863700129F8D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				01B13012200FD906008B435C /* connected_image.png */,
+				01658B502008922C00129F8D /* textfiled.png */,
+				01658B3D20088BBA00129F8D /* bottombg.png */,
+				01658B3A20088BBA00129F8D /* buttonbg.png */,
+				01658B3E20088BBA00129F8D /* logo.png */,
+				01658B4420088BBA00129F8D /* logo2.png */,
+				01658B4220088BBA00129F8D /* orange_button.png */,
+				01658B3F20088BBA00129F8D /* round.png */,
+				01658B3C20088BBA00129F8D /* topbg.png */,
+				01658B4320088BBA00129F8D /* undertitle.png */,
+				01658B4020088BBA00129F8D /* undertitle2.png */,
+				01658B3B20088BBA00129F8D /* unitracker title.png */,
+				01658B4120088BBA00129F8D /* UNITRACKER.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		01A504C0200A5AC0003CF260 /* ModalServices */ = {
+			isa = PBXGroup;
+			children = (
+				01A504CC200D0DBA003CF260 /* Constants.swift */,
+			);
+			path = ModalServices;
+			sourceTree = "<group>";
+		};
+		333460B20C16A7465F225D23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01A504CE200D7F94003CF260 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E841FF120083EAB003E2602 = {
+			isa = PBXGroup;
+			children = (
+				8E841FFC20083EAB003E2602 /* UNITRACK */,
+				8E841FFB20083EAB003E2602 /* Products */,
+				333460B20C16A7465F225D23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E841FFB20083EAB003E2602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E841FFA20083EAB003E2602 /* UNITRACK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E841FFC20083EAB003E2602 /* UNITRACK */ = {
+			isa = PBXGroup;
+			children = (
+				01A504C5200CF854003CF260 /* UNITRACK.entitlements */,
+				01A504C0200A5AC0003CF260 /* ModalServices */,
+				01658B392008863700129F8D /* Images */,
+				01658B312008818100129F8D /* VCs */,
+				8E841FFD20083EAC003E2602 /* AppDelegate.swift */,
+				8E84200120083EAC003E2602 /* Main.storyboard */,
+				8E84200420083EAC003E2602 /* Assets.xcassets */,
+				8E84200620083EAC003E2602 /* LaunchScreen.storyboard */,
+				8E84200920083EAC003E2602 /* Info.plist */,
+			);
+			path = UNITRACK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E841FF920083EAB003E2602 /* UNITRACK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E84200C20083EAC003E2602 /* Build configuration list for PBXNativeTarget "UNITRACK" */;
+			buildPhases = (
+				8E841FF620083EAB003E2602 /* Sources */,
+				8E841FF720083EAB003E2602 /* Frameworks */,
+				8E841FF820083EAB003E2602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UNITRACK;
+			productName = UNITRACK;
+			productReference = 8E841FFA20083EAB003E2602 /* UNITRACK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E841FF220083EAB003E2602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = DennisVanBasten;
+				TargetAttributes = {
+					8E841FF920083EAB003E2602 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 0;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8E841FF520083EAB003E2602 /* Build configuration list for PBXProject "UNITRACK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E841FF120083EAB003E2602;
+			productRefGroup = 8E841FFB20083EAB003E2602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E841FF920083EAB003E2602 /* UNITRACK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E841FF820083EAB003E2602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01658B4820088BBA00129F8D /* bottombg.png in Resources */,
+				01658B4920088BBA00129F8D /* logo.png in Resources */,
+				8E84200820083EAC003E2602 /* LaunchScreen.storyboard in Resources */,
+				01658B4D20088BBA00129F8D /* orange_button.png in Resources */,
+				01658B4520088BBA00129F8D /* buttonbg.png in Resources */,
+				01658B4E20088BBA00129F8D /* undertitle.png in Resources */,
+				8E84200520083EAC003E2602 /* Assets.xcassets in Resources */,
+				01658B4620088BBA00129F8D /* unitracker title.png in Resources */,
+				01658B4A20088BBA00129F8D /* round.png in Resources */,
+				8E84200320083EAC003E2602 /* Main.storyboard in Resources */,
+				01658B512008922D00129F8D /* textfiled.png in Resources */,
+				01B13013200FD907008B435C /* connected_image.png in Resources */,
+				01658B4720088BBA00129F8D /* topbg.png in Resources */,
+				01658B4C20088BBA00129F8D /* UNITRACKER.png in Resources */,
+				01658B4F20088BBA00129F8D /* logo2.png in Resources */,
+				01658B4B20088BBA00129F8D /* undertitle2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E841FF620083EAB003E2602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0183AAD02009795D00F84EBB /* OpenedLecturerClassViewController.swift in Sources */,
+				01658B382008832E00129F8D /* RootNavigationController.swift in Sources */,
+				0183AAD42009A8DE00F84EBB /* SearchLecturerViewController.swift in Sources */,
+				0183AAD220099DC700F84EBB /* WelcomeStudentViewController.swift in Sources */,
+				01B13015200FE2D3008B435C /* WelcomeLectureViewController.swift in Sources */,
+				017B3357201671FC00AB104F /* PresentViewController.swift in Sources */,
+				01A504CD200D0DBA003CF260 /* Constants.swift in Sources */,
+				01658B35200882B700129F8D /* LectureViewController.swift in Sources */,
+				8E841FFE20083EAC003E2602 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E84200120083EAC003E2602 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E84200220083EAC003E2602 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E84200620083EAC003E2602 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E84200720083EAC003E2602 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E84200A20083EAC003E2602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E84200B20083EAC003E2602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E84200D20083EAC003E2602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45KFN3RU3Y;
+				INFOPLIST_FILE = UNITRACK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluetooth.unitracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8E84200E20083EAC003E2602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45KFN3RU3Y;
+				INFOPLIST_FILE = UNITRACK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluetooth.unitracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E841FF520083EAB003E2602 /* Build configuration list for PBXProject "UNITRACK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E84200A20083EAC003E2602 /* Debug */,
+				8E84200B20083EAC003E2602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E84200C20083EAC003E2602 /* Build configuration list for PBXNativeTarget "UNITRACK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E84200D20083EAC003E2602 /* Debug */,
+				8E84200E20083EAC003E2602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E841FF220083EAB003E2602 /* Project object */;
+}
