@@ -70,7 +70,7 @@ class SearchLecturerViewController: UIViewController {
                 }
             }
             cleanup()
-            self.navigationController?.popToViewController((self.navigationController?.childViewControllers.first)!, animated: true)
+            self.navigationController?.popToViewController((self.navigationController?.children.first)!, animated: true)
         }
     }
     
