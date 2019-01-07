@@ -21,6 +21,13 @@ class LectureViewController: UIViewController, UITextFieldDelegate {
     //MARK: override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     //MARK: My Touch Event Functions

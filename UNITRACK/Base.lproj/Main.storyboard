@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kh9-pq-o2B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kh9-pq-o2B">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+        <array key="Baskerville.ttc">
+            <string>Baskerville-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -28,13 +38,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="b53-BG-ojH">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="30" width="96.5" height="96.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="b53-BG-ojH" secondAttribute="height" multiplier="1:1" id="U9a-OR-It8"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNITRACKER.png" translatesAutoresizingMaskIntoConstraints="NO" id="C2N-bK-vRd">
-                                        <rect key="frame" x="88" y="131" width="144" height="15"/>
+                                        <rect key="frame" x="88" y="132" width="144" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="0R5-Xp-LG2"/>
                                         </constraints>
@@ -46,16 +56,16 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undertitle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Jq-1g-V4U">
-                                        <rect key="frame" x="88" y="151" width="144" height="22"/>
+                                        <rect key="frame" x="88" y="152" width="144" height="22"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-N1-tA0">
-                                        <rect key="frame" x="0.0" y="203" width="320" height="20"/>
+                                        <rect key="frame" x="-0.5" y="204" width="320" height="20"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.38198715448379517" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qb8-v3-M9d">
-                                        <rect key="frame" x="48" y="260" width="224" height="50"/>
+                                        <rect key="frame" x="48" y="261" width="224" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Wgf-gz-VSp"/>
                                         </constraints>
@@ -68,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hed-T4-fqQ">
-                                        <rect key="frame" x="48" y="340" width="224" height="50"/>
+                                        <rect key="frame" x="48" y="341" width="224" height="50"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                         <state key="normal" title="STUDENT" backgroundImage="buttonbg.png">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,7 +151,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="odp-t8-VVF">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112.5" y="30" width="96" height="96"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="odp-t8-VVF" secondAttribute="height" multiplier="1:1" id="uEy-BX-0Ec"/>
                                         </constraints>
@@ -162,7 +172,7 @@
                                         <rect key="frame" x="88" y="151" width="144" height="19"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUDENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLk-2i-wvR">
-                                        <rect key="frame" x="112.5" y="190" width="95" height="24"/>
+                                        <rect key="frame" x="113" y="190" width="95" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="Rhv-gB-VPc"/>
                                         </constraints>
@@ -181,7 +191,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-No-zBD">
-                                                <rect key="frame" x="112.5" y="17.5" width="63" height="19"/>
+                                                <rect key="frame" x="112.5" y="18" width="63" height="19"/>
                                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -225,7 +235,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="103"/>
                                             </imageView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oU9-sM-LDK">
-                                                <rect key="frame" x="8" y="8" width="272" height="87"/>
+                                                <rect key="frame" x="8" y="8" width="272" height="88"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="6iA-PL-vPQ" style="IBUITableViewCellStyleDefault" id="wYh-6p-JHU">
@@ -359,7 +369,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfk-th-QPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1444" y="115"/>
+            <point key="canvasLocation" x="-1286" y="116"/>
         </scene>
         <!--Lecture View Controller-->
         <scene sceneID="hgy-JK-FiM">
@@ -379,13 +389,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cQI-1e-JZb">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="30" width="96.5" height="96.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="cQI-1e-JZb" secondAttribute="height" multiplier="1:1" id="ufI-o4-rmF"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNITRACKER.png" translatesAutoresizingMaskIntoConstraints="NO" id="rwL-as-bFe">
-                                        <rect key="frame" x="88" y="131" width="144" height="15"/>
+                                        <rect key="frame" x="88" y="131.5" width="144" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="Ydq-Ro-CXN"/>
                                         </constraints>
@@ -397,16 +407,16 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undertitle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="WOC-aW-fzL">
-                                        <rect key="frame" x="88" y="151" width="144" height="22"/>
+                                        <rect key="frame" x="88" y="151.5" width="144" height="22"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LECTURER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU1-Xw-20c">
-                                        <rect key="frame" x="106" y="189" width="108.5" height="23.5"/>
+                                        <rect key="frame" x="106.5" y="189.5" width="108.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWB-bo-NAL">
-                                        <rect key="frame" x="88" y="417" width="144" height="30"/>
+                                        <rect key="frame" x="88.5" y="417" width="144" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="cNd-GQ-kZa"/>
                                         </constraints>
@@ -419,7 +429,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glb-i9-g7h">
-                                        <rect key="frame" x="16" y="220.5" width="288" height="54"/>
+                                        <rect key="frame" x="16" y="221" width="288" height="54"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfiled.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ewo-9m-Y3P">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
@@ -448,7 +458,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o44-Gf-9u0">
-                                        <rect key="frame" x="16" y="290.5" width="288" height="54"/>
+                                        <rect key="frame" x="16" y="291" width="288" height="54"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfiled.png" translatesAutoresizingMaskIntoConstraints="NO" id="oCG-j3-D4U">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
@@ -477,7 +487,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-ns-fIG">
-                                        <rect key="frame" x="60" y="352.5" width="200" height="54"/>
+                                        <rect key="frame" x="60" y="353" width="200" height="54"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrS-h6-t5M">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="54"/>
@@ -487,7 +497,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCm-up-9g9">
-                                                <rect key="frame" x="65.5" y="14.5" width="69.5" height="25.5"/>
+                                                <rect key="frame" x="66" y="15" width="69.5" height="25.5"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -577,13 +587,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="GQS-pa-fP7">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="30" width="96.5" height="96.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GQS-pa-fP7" secondAttribute="height" multiplier="1:1" id="VRE-jW-BpG"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNITRACKER.png" translatesAutoresizingMaskIntoConstraints="NO" id="BRm-lG-eNL">
-                                        <rect key="frame" x="88" y="131" width="144" height="15"/>
+                                        <rect key="frame" x="88" y="131.5" width="144" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="NTQ-gk-Igb"/>
                                         </constraints>
@@ -595,10 +605,10 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undertitle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="odi-gE-1kB">
-                                        <rect key="frame" x="88" y="151" width="144" height="22"/>
+                                        <rect key="frame" x="88" y="151.5" width="144" height="22"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-3j-k7L">
-                                        <rect key="frame" x="16" y="318.5" width="288" height="54"/>
+                                        <rect key="frame" x="16" y="319" width="288" height="54"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYP-4N-gZq">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
@@ -611,7 +621,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD LINK TO EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6G-cV-pM7">
-                                                <rect key="frame" x="35.5" y="26.5" width="217" height="18.5"/>
+                                                <rect key="frame" x="36" y="26.5" width="217" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -631,19 +641,19 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LECTURER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3Y-8b-W7G">
-                                        <rect key="frame" x="116.5" y="203" width="87" height="18.5"/>
+                                        <rect key="frame" x="116.5" y="203.5" width="87" height="18.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORGOT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAw-e5-rqQ">
-                                        <rect key="frame" x="128" y="221.5" width="64.5" height="18.5"/>
+                                        <rect key="frame" x="128.5" y="222" width="64.5" height="18.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZN-Pu-wf1">
-                                        <rect key="frame" x="111" y="240" width="98.5" height="18.5"/>
+                                        <rect key="frame" x="111" y="240.5" width="98.5" height="18.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -740,13 +750,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="s1K-Kp-urw">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="30" width="96.5" height="96.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="s1K-Kp-urw" secondAttribute="height" multiplier="1:1" id="Taq-cn-gzX"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNITRACKER.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ftk-sJ-MYZ">
-                                        <rect key="frame" x="88" y="131" width="144" height="15"/>
+                                        <rect key="frame" x="88" y="131.5" width="144" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="2Qv-8q-oi6"/>
                                         </constraints>
@@ -758,13 +768,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undertitle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="kZR-Ad-9sc">
-                                        <rect key="frame" x="88" y="151" width="144" height="22"/>
+                                        <rect key="frame" x="88" y="151.5" width="144" height="22"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-Sj-9K1">
                                         <rect key="frame" x="0.0" y="214.5" width="320" height="147"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fee-Ii-8E9">
-                                                <rect key="frame" x="108.5" y="0.0" width="103" height="23.5"/>
+                                                <rect key="frame" x="109" y="-0.5" width="103" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -798,13 +808,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Bluetooth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wn-rL-WVN">
-                                                        <rect key="frame" x="84.5" y="8" width="119" height="18.5"/>
+                                                        <rect key="frame" x="85" y="8" width="119" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-05-eE2">
-                                                        <rect key="frame" x="95" y="26.5" width="98.5" height="18.5"/>
+                                                        <rect key="frame" x="95.5" y="26.5" width="98.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -899,13 +909,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Ds-Z1-orf">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="30" width="96.5" height="96.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1Ds-Z1-orf" secondAttribute="height" multiplier="1:1" id="4If-NN-DeA"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNITRACKER.png" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-GY-I2K">
-                                        <rect key="frame" x="88" y="131" width="144" height="15"/>
+                                        <rect key="frame" x="88" y="131.5" width="144" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="5Ev-SC-blf"/>
                                         </constraints>
@@ -917,10 +927,10 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undertitle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="siP-An-6nt">
-                                        <rect key="frame" x="88" y="151" width="144" height="22"/>
+                                        <rect key="frame" x="88" y="151.5" width="144" height="22"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN IS OPEN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQc-RN-mnJ">
-                                        <rect key="frame" x="76.5" y="193" width="167.5" height="23.5"/>
+                                        <rect key="frame" x="76.5" y="193.5" width="167.5" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="23" id="N6W-gF-T81"/>
                                         </constraints>
@@ -929,7 +939,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7C-2s-sQa">
-                                        <rect key="frame" x="80" y="224.5" width="224" height="32"/>
+                                        <rect key="frame" x="80" y="224" width="224" height="32"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wY-Qq-efI">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="14"/>
@@ -982,7 +992,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca7-fA-AR2">
-                                                <rect key="frame" x="79" y="8" width="42" height="18.5"/>
+                                                <rect key="frame" x="79.5" y="8" width="42" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1117,13 +1127,13 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kzy-uQ-G2O">
-                                        <rect key="frame" x="112" y="30" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="30" width="96.5" height="96.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Kzy-uQ-G2O" secondAttribute="height" multiplier="1:1" id="YJb-AD-XFs"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNITRACKER.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-3g-fCL">
-                                        <rect key="frame" x="88" y="131" width="144" height="15"/>
+                                        <rect key="frame" x="88" y="131.5" width="144" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="a0O-qG-GcZ"/>
                                         </constraints>
@@ -1135,16 +1145,16 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undertitle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vr2-eS-0rZ">
-                                        <rect key="frame" x="88" y="151" width="144" height="22"/>
+                                        <rect key="frame" x="88" y="151.5" width="144" height="22"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5n-7R-zkE">
-                                        <rect key="frame" x="108.5" y="193" width="103" height="23.5"/>
+                                        <rect key="frame" x="108" y="193.5" width="103" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUDENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzQ-4l-ugA">
-                                        <rect key="frame" x="112.5" y="216.5" width="95" height="23.5"/>
+                                        <rect key="frame" x="112" y="217" width="95" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
