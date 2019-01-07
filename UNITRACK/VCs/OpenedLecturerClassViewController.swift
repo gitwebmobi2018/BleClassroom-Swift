@@ -246,13 +246,13 @@ extension OpenedLecturerClassViewController: CBPeripheralManagerDelegate {
             if let value = request.value {
                 
                 //here is the message text that we receive, use it as you wish.
-                let studentInfoString = String(data: value, encoding: String.Encoding.utf8)!
-                if !deviceNames.contains(studentInfoString) {
-                    let strArray = studentInfoString.components(separatedBy: "|")
-                    if strArray.count == 5 {
-                        removeStudent(strArray)
+                let studentInfoString = String(data: value, encoding: String.Encoding.utf8)
+                if !deviceNames.contains(studentInfoString!) {
+                    let strArray = studentInfoString?.components(separatedBy: "|")
+                    if strArray?.count == 5 {
+                        removeStudent(strArray!)
                     } else {
-                        deviceNames.append(studentInfoString)
+                        deviceNames.append(studentInfoString!)
                         myTable.reloadData()
                     }
                 }
