@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WelcomeStudentViewController: UIViewController, UITextFieldDelegate {
+class WelcomeStudentViewController: UIViewController {
 
     //MARK: Components
     @IBOutlet weak var firstNameView: UIView!
@@ -24,10 +24,6 @@ class WelcomeStudentViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         keyBoardHeight = self.view.frame.size.height - firstNameView.frame.origin.y
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     //MARK: My Touch Event Functions
@@ -60,6 +56,10 @@ class WelcomeStudentViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+}
+
+extension WelcomeStudentViewController: UITextFieldDelegate {
+    
     //MARK: UITextFieldDelegate
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if self.view.frame.origin.y != -250 {
@@ -78,5 +78,5 @@ class WelcomeStudentViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-
+    
 }

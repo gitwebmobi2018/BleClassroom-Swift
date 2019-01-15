@@ -32,21 +32,12 @@ class SearchLecturerViewController: UIViewController {
         centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.main)
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         print("Stopping scan")
         centralManager?.stopScan()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
     }
     
     //MARK: My Touch Event Functions
@@ -147,8 +138,9 @@ class SearchLecturerViewController: UIViewController {
 
 }
 
-//MARK: CBCentralManagerDelegate
+
 extension SearchLecturerViewController: CBCentralManagerDelegate {
+    //MARK: CBCentralManagerDelegate
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .poweredOn:
@@ -199,8 +191,9 @@ extension SearchLecturerViewController: CBCentralManagerDelegate {
     }
 }
 
-//MARK: CBPeripheralDelegate
 extension SearchLecturerViewController: CBPeripheralDelegate {
+    
+    //MARK: CBPeripheralDelegate
     func peripheral( _ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         
         for service in peripheral.services! {
@@ -223,15 +216,13 @@ extension SearchLecturerViewController: CBPeripheralDelegate {
     }
 }
 
-//MARK: UITableViewDelegate
-extension SearchLecturerViewController: UITableViewDelegate {
+extension SearchLecturerViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    //MARK: UITableViewDelegate & UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedPeripheral = peripherals[indexPath.row]
     }
-}
 
-//MARK: UITableViewDataSource
-extension SearchLecturerViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return deviceNames.count
     }
