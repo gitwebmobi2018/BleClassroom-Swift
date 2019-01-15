@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-class LectureViewController: UIViewController, UITextFieldDelegate {
+class LectureViewController: UIViewController {
     
     //MARK: Components
     @IBOutlet weak var userNameField: UITextField!
@@ -38,13 +38,16 @@ class LectureViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: My Functions
-    
     func moveView(_ shouldMove:Bool) {
         let movement = CGFloat(shouldMove ? -150 : 0)
         UIView.animate(withDuration: 0.3) {
             self.view.frame.origin = CGPoint(x: 0, y: movement)
         }
     }
+    
+}
+
+extension LectureViewController: UITextFieldDelegate {
     
     //MARK: UITextFieldDelegate
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -64,14 +67,5 @@ class LectureViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

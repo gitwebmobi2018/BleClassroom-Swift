@@ -35,24 +35,6 @@ class OpenedLecturerClassViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated:true)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
     //MARK: My Touch Event Functions
     @IBAction func closeSignInTouchAction(_ sender: Any) {
         createAndExportingCSVFile()
@@ -205,8 +187,8 @@ class OpenedLecturerClassViewController: UIViewController {
 
 }
 
-//MARK: CBPeripheralManagerDelegate
 extension OpenedLecturerClassViewController: CBPeripheralManagerDelegate {
+    //MARK: CBPeripheralManagerDelegate
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         switch peripheral.state {
         case .poweredOn:
@@ -262,15 +244,16 @@ extension OpenedLecturerClassViewController: CBPeripheralManagerDelegate {
     }
 }
 
-//MARK: UITableViewDelegate
 extension OpenedLecturerClassViewController: UITableViewDelegate {
+    //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 20
     }
 }
 
-//MARK: UITableViewDataSource
+
 extension OpenedLecturerClassViewController: UITableViewDataSource {
+    //MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return deviceNames.count
     }
