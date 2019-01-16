@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreBluetooth
+import Bond
+import ReactiveKit
 
 class LectureViewController: UIViewController {
     
