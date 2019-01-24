@@ -13,7 +13,7 @@ import ReactiveKit
 
 class SearchLecturerViewController: UIViewController {
     
-    //MARK: Components
+//MARK: - Components
     @IBOutlet weak var studentLabel: UILabel!
     @IBOutlet weak var selectClasslabel: UILabel!
     @IBOutlet weak var myTable: UITableView!
@@ -21,14 +21,14 @@ class SearchLecturerViewController: UIViewController {
     @IBOutlet weak var connectedImage: UIImageView!
     @IBOutlet weak var tableViewBackgroundImage: UIImageView!
     
-    //MARK: Properties
+//MARK: - Properties
     var centralManager : CBCentralManager!
     var selectedPeripheral : CBPeripheral!
     
     var peripherals = Array<CBPeripheral>()
     var deviceNames = [String]()
     
-    //MARK: override Functions
+//MARK: - override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         centralManager = CBCentralManager(delegate: self, queue: DispatchQueue.main)
@@ -42,7 +42,7 @@ class SearchLecturerViewController: UIViewController {
         centralManager?.stopScan()
     }
     
-    //MARK: My Touch Event Functions
+//MARK: - IBAction
     @IBAction func connectBluetoothAction(_ sender: Any) {
         if bottomBtnLabel.text == "Connect" {
             if selectedPeripheral == nil {
@@ -67,7 +67,7 @@ class SearchLecturerViewController: UIViewController {
         }
     }
     
-    //MARK: My functions
+//MARK: - My functions
     func changeUIWhenPeripheralConnected(_ isConnected: Bool) {
         if isConnected {
             myTable.isHidden = true
@@ -140,9 +140,9 @@ class SearchLecturerViewController: UIViewController {
 
 }
 
-
+//MARK: - CBCentralManagerDelegate
 extension SearchLecturerViewController: CBCentralManagerDelegate {
-    //MARK: CBCentralManagerDelegate
+    
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .poweredOn:
@@ -193,9 +193,9 @@ extension SearchLecturerViewController: CBCentralManagerDelegate {
     }
 }
 
+//MARK: - CBPeripheralDelegate
 extension SearchLecturerViewController: CBPeripheralDelegate {
     
-    //MARK: CBPeripheralDelegate
     func peripheral( _ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         
         for service in peripheral.services! {
@@ -218,9 +218,9 @@ extension SearchLecturerViewController: CBPeripheralDelegate {
     }
 }
 
+//MARK: - UITableViewDelegate & UITableViewDataSource
 extension SearchLecturerViewController: UITableViewDelegate, UITableViewDataSource {
     
-    //MARK: UITableViewDelegate & UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedPeripheral = peripherals[indexPath.row]
     }
