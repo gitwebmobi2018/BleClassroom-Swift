@@ -13,14 +13,14 @@ import ReactiveKit
 
 class OpenedLecturerClassViewController: UIViewController {
 
-    //MARK: Components
+//MARK: IBOutlet
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var myTable: UITableView!
     @IBOutlet weak var lectureTitleLabel: UILabel!
     @IBOutlet weak var closeBluetoothBtn: UIButton!
     
-    //MARK: Properties
+//MARK: Properties
     var peripheralManager : CBPeripheralManager!
     
     var timer = Timer()
@@ -28,7 +28,7 @@ class OpenedLecturerClassViewController: UIViewController {
     
     var deviceNames = [String]()
     
-    //MARK: override Functions
+//MARK: override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         initTimer()
@@ -37,12 +37,12 @@ class OpenedLecturerClassViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated:true)
     }
     
-    //MARK: My Touch Event Functions
+//MARK: My Touch Event Functions
     @IBAction func closeSignInTouchAction(_ sender: Any) {
         createAndExportingCSVFile()
     }
     
-    //MARK: Objc Functions
+//MARK: Objc Functions
     @objc func calTimeSeconds() {
         intervalSecond += 1
         let min = Int(intervalSecond/60)
@@ -101,8 +101,7 @@ class OpenedLecturerClassViewController: UIViewController {
         
     }
     
-    //MARK: My Functions
-    
+//MARK: My Functions
     func initTimer() {
         let today = Date()
         let dateFormatter = DateFormatter()
@@ -189,8 +188,8 @@ class OpenedLecturerClassViewController: UIViewController {
 
 }
 
+//MARK: - CBPeripheralManagerDelegate
 extension OpenedLecturerClassViewController: CBPeripheralManagerDelegate {
-    //MARK: CBPeripheralManagerDelegate
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         switch peripheral.state {
         case .poweredOn:
@@ -246,16 +245,15 @@ extension OpenedLecturerClassViewController: CBPeripheralManagerDelegate {
     }
 }
 
+//MARK: - UITableViewDelegate
 extension OpenedLecturerClassViewController: UITableViewDelegate {
-    //MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 20
     }
 }
 
-
+//MARK: - UITableViewDataSource
 extension OpenedLecturerClassViewController: UITableViewDataSource {
-    //MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return deviceNames.count
     }

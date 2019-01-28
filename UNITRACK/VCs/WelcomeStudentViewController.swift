@@ -12,23 +12,23 @@ import ReactiveKit
 
 class WelcomeStudentViewController: UIViewController {
 
-    //MARK: Components
+//MARK: IBOutlet
     @IBOutlet weak var firstNameView: UIView!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
     @IBOutlet weak var studentIDTextField: UITextField!
     @IBOutlet weak var commentTextField: UITextField!
     
-    //MARK: Properties
+//MARK: Properties
     var keyBoardHeight = CGFloat()
     
-    //MARK: override Functions
+//MARK: override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         keyBoardHeight = self.view.frame.size.height - firstNameView.frame.origin.y
     }
     
-    //MARK: My Touch Event Functions
+//MARK: My Touch Event Functions
     @IBAction func searchBDevicesTouchAction(_ sender: Any) {
         if firstNameTextField.text?.count == 0 || surnameTextField.text?.count == 0 || studentIDTextField.text?.count == 0 || commentTextField.text?.count == 0 {
             let alertController = UIAlertController(title: "Error", message: "First name, Surname, Student ID Number and Comment are mandatory! Please input all of them.", preferredStyle: .alert)
@@ -50,7 +50,7 @@ class WelcomeStudentViewController: UIViewController {
         }
     }
     
-    //MARK: My Functions
+//MARK: My Functions
     func moveView(_ shouldMove:Bool) {
         let movement = CGFloat(shouldMove ? -200 : 0)
         UIView.animate(withDuration: 0.3) {
@@ -60,9 +60,8 @@ class WelcomeStudentViewController: UIViewController {
 
 }
 
+//MARK: UITextFieldDelegate
 extension WelcomeStudentViewController: UITextFieldDelegate {
-    
-    //MARK: UITextFieldDelegate
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if self.view.frame.origin.y != -250 {
             moveView(true)
